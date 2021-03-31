@@ -32,10 +32,10 @@ jobs:
         uses: android-actions/setup-android@v2
 
       - name: Build App
-        run:  chmod +x gradlew &&./gradlew build && ls app/build/outputs/apk
+        run:  chmod +x gradlew &&./gradlew build && ls app/build/outputs/apk/debug
      
       - name: Upload APK
         uses: actions/upload-artifact@v1
         with:
           name: app
-          path: app/build/outputs/apk/*.apk
+          path: app/build/outputs/apk/debug/debug.apk

@@ -32,4 +32,4 @@ jobs:
         uses: android-actions/setup-android@v2
 
       - name: Build SampleApplication
-        run:  sudo  pwd && ./gradlew --no-daemon build
+        run:  sudo  pwd && ls && ./gradlew --no-daemon build
